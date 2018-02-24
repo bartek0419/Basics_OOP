@@ -3,12 +3,33 @@ namespace OOP_Basics
 {
     class Person
     {
-        public int Age { get; set; }
         public string Name { get; set; }
     }
 
     class Customer : Person
     {
+        public bool GoldCustomer;
+
+        private int _age;
+
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    _age = 0;
+                }
+                else
+                {
+                    _age = value;
+                }
+            }
+        }
         public bool IsGoldCustomer
         {
             get

@@ -1,1 +1,6 @@
 c:\users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\bin\Debug\OOP Basics.exe.config
+C:\Users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\bin\Debug\OOP Basics.exe
+C:\Users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\bin\Debug\OOP Basics.pdb
+C:\Users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\obj\Debug\OOP Basics.csprojResolveAssemblyReference.cache
+C:\Users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\obj\Debug\OOP Basics.exe
+C:\Users\bartekb\documents\visual studio 2015\Projects\OOP Basics\OOP Basics\obj\Debug\OOP Basics.pdb
