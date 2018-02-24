@@ -4,6 +4,17 @@ namespace OOP_Basics
     class Person
     {
         public string Name { get; set; }
+
+        public Person(string name)
+        {
+            Name = name;
+            Console.WriteLine("Person");
+        }
+
+        protected string Description()
+        {
+            return "Person";
+        }
     }
 
     class Customer : Person
@@ -11,6 +22,12 @@ namespace OOP_Basics
         public bool GoldCustomer;
 
         private int _age;
+
+        public Customer(string name, int age) : base(name)
+        {
+            Console.WriteLine("Customer");
+            Age = age;
+        }
 
         public int Age
         {
@@ -30,6 +47,15 @@ namespace OOP_Basics
                 }
             }
         }
+
+        public string Description
+        {
+            get
+            {
+                return "Customer has " + Age + " and has a name " + Name;
+            }
+        }
+
         public bool IsGoldCustomer
         {
             get
@@ -41,10 +67,6 @@ namespace OOP_Basics
             }
         }
 
-        public Customer(int creditAmount)
-        {
-            this._creditAmount = creditAmount;
-        }
 
         private int _creditAmount;
     }
@@ -53,9 +75,8 @@ namespace OOP_Basics
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer(10000);
-            customer.Age = 25;
-            Console.WriteLine("Is Gold Customer : " + customer.IsGoldCustomer);
+            Customer customer = new Customer("Adam", 10);
+            Console.WriteLine(customer.Description);
         }
     }
 }
